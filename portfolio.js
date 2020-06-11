@@ -131,7 +131,7 @@ $(document).ready(function()
 	{
 	if($(window).width()<1000){
 $("#back").css("visibility",'visible');
-	alert("This site is primarly developed for lerger screens(laptops or computers)");}
+	alert("This site is primarly developed for larger screens(laptops or computers)");}
 else
 $("#back").css("visibility",'hidden');	});
 
