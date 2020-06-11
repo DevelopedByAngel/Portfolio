@@ -1,0 +1,68 @@
+#underline
+{
+	left: 227px;
+}
+
+#works div 
+{
+	position: absolute;
+	height: 70%;
+	width: 80%;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(255,255,255,0.2));
+	padding:5% 0% 5% 0%;
+}
+#works div a img
+{
+	height: 100%; /*of div*/
+	border: 10px double #fffacd;/*lemmonchiffon*/
+	border-radius: 10px;
+	vertical-align: baseline;
+	display: inline;
+	margin:0% 5% 0% 5%;
+}
+#works div a img::selection
+{}
+#works div:nth-child(1) 
+{
+ left: 10%;
+ top: 20%;
+}
+#works div:nth-child(2)
+{
+	top: 110%;
+	right: 10%;
+}
+
+#works div:nth-child(3)
+{
+	top: 200%;
+	left: 10%;
+}
+#works div:last-child
+{
+	margin-bottom: 5%;
+}
+h1
+{
+	color: white;
+	font-size:50px;
+	font-family: "Bauhaus 93",'Arial';
+	text-decoration: underline;
+	text-decoration-style: solid; 
+	text-decoration-color: rgba(255,255,255,0.4);
+}
+p
+{
+vertical-align: middle;
+font-size:25px;
+font-variant: petite-caps;
+font-weight: 700;
+color: #deb887;/*blurywood*/
+font-family: "Lucida Fax",'Arial'
+
+}
+p span
+{
+	color: #fffacd;
+    font-family: monospace;
+}

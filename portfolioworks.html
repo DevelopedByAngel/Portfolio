@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angel Francis</title>
+		<link rel="stylesheet" type="text/css" href="portfolio.css">
+			<link rel="stylesheet" type="text/css" href="portfolioworks.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<!-- <meta http-equiv="refresh" content="3"> -->
+</head>
+<body>
+			<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+			
+
+
+			<!-- basic -->
+		<div id="menu" class="link">
+			<!-- <div id="back"></div> -->
+<div id="underline"></div>
+<a id="home" href="portfolio.html">Home</a>
+<a  id="about" href="portfolioabout.html">About</a>
+<a id="works" href="#">Works</a>
+<span id="contact" >Contact</span>
+<table>
+	<tr id="email"><td><img src="email.png" title="Email" onclick="window.location.href='mailto: angelfrancis1111@example.com'" width="30"></td></tr>
+	<tr id="linkedin"><td><img src="linkedin.png" onclick="window.location.href='https://www.linkedin.com/in/angel-francis-267906171/'" width="30"></td></tr>
+	<tr id="studymonk"><td><img src="studymonk.png" onclick="window.location.href='https://student.studymonk.in/#/u/angel'	;" width="30"></td></tr>
+</table>
+</div>
+<!--  -->
+
+<!-- target="blank_" for new tab -->
+<div id="works">
+	<div id="d1">
+		<a href="https://developedbyangel.github.io/TheSugarSage/" target="blank_"><img src="works/1.jpg" style="float: left;"></a>
+		<h1>1.The Sugar Sage</h1>
+		<p>This is a podcast website where RJ Jessy shares here thought on random things. This podcast is entirely in Tamil(My mother tongue).Created with HTML, CSS, JQuery<br><span> May, 2020</span></p>
+	</div>
+	<div id="d2" >
+		<a href="https://angelfrancis.pythonanywhere.com/" target="blank_"><img src="works/2.jpg" style="float: right;"></a>
+		<h1>2.Remainder</h1>
+		<p>This website is used to remaind the user according to the due time and remainder.An email is sent at the particular time or when the time as exceed along with the given URL(optional) link.This is created with Flask as backend and HTML, CSS, JS in Frontend<br><span> March, 2020</span></p>	
+	</div>
+	<div id="d3">
+		<a href="works/prototype.png" target="blank_"><img src="works/4.jpg" style="float: left;"></a>
+		<h1>3.Smart Irrigation System</h1>
+		<p>This is a project done for a Hackathon.This system consists of solar powered water pump along with an 
+automatic water flow control manually controlled from a mobile app using a moisture sensor. It is the proposed solution 
+for the present energy crisis for the Indian farmers. This system conserves 
+electricity by reducing the usage of grid power and conserves water by reducing 
+water losses. <br><span> December, 2019</span></p>
+	</div>
+</div>
+
+
+<div id="paper1" onmouseover="paperin();" onmouseout="paperout();"></div><!-- for background since resume overlapping -->
+<p id="p"><img src="resumetext.png" id="resumetext"width="51"></p>
+<div id="paper2"></div>
+
+
+<script type="text/javascript" src="portfolio.js"></script>
+<script type="text/javascript" src="portfolioworks.js"></script>
+</body>
+</html>
