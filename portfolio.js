@@ -53,7 +53,7 @@ $('#paper1').click(function()
 	$('#paper1').css('border-left','2000px solid rgba(220,220,220,1)');
 	$('#paper2').css('border-bottom','1000px solid white');
 	$('#paper2').css('border-left','2000px solid rgba(220,220,220,1)');
-	setTimeout(function(){window.location.href = "file:///D:/ANGEL/web%20demo/resume.pdf";},250);
+	setTimeout(function(){window.location.href = "resume.pdf";},250);
 });
 function paperin()
 {
