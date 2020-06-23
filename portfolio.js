@@ -1,7 +1,7 @@
+		$('* :not(#loader,html,body,#vid,#wings)').css('display','none');
 
 $('#vid').on("playing",function()
 	{
-		$('* :not(#loader,html,body,#vid,#wings)').css('display','none');
 		setTimeout(function()
 			{
 				$('img').css('opacity','100%');
