@@ -1,21 +1,3 @@
-// 		$('* :not(#loader,html,body,#vid,#wings)').css('display','none');
-
-// $('#vid').on("playing",function()
-// 	{
-// 		setTimeout(function()
-// 			{
-// 				$('img').css('opacity','100%');
-// 			},3300);
-// 		setTimeout(function()
-// 			{
-// 				$('#loader').css("opacity","0%");
-// 				$('*').css('display','');
-// 			},5100);
-// 		setTimeout(function()
-// 			{
-// 				$('#loader').remove();
-// 			},5200);
-// 	});
 
 
 $('#my').mousemove(function(event)
