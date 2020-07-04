@@ -2,7 +2,7 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-background:transparent;/*the non scroller space in the scrolling area*/
+background:#c20b5c;/*the non scroller space in the scrolling area*/
 }
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to bottom,transparent,#c600eb,transparent);/*scroller normally */
