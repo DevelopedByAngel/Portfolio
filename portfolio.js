@@ -86,8 +86,8 @@ $('#paper1').click(function()
 	$('#paper2').css('border-bottom','1000px solid white');
 	$('#paper2').css('border-left','2000px solid rgba(220,220,220,1)');
 	setTimeout(function(){
-		$('<a href="https://student.studymonk.in/#/login" download></a>')[0].click();    
-		window.location.href = "file:///D:/ANGEL/web%20demo/resume.pdf";
+		$('<a hrf="/resume.pdf" download></a>')[0].click();    
+		window.location.href = "";
 	},250);
 });
 function paperin()
