@@ -3,36 +3,82 @@
 <head>
 	<title>Angel Francis</title>
 	<noscript>You need to enable javascript to load this site</noscript>
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<link rel="icon"  href="logo.png">
-
-	<!-- <meta http-equiv="refresh" content="3"> -->
-	<meta name="google-site-verification" content="2Wu_7xypI28UuNTaBkFbtZK_AbVa1y0VcGXk5yBBXdM" />
+	<link rel="icon"  href="wings.png">
 </head>
-<body>
+<body style="overflow: hidden;">
 		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<!-- 		<div id="loader"><video src="smoke1.mp4"  width="100" id='vid' autoplay muted></video>
-			<img src="wings.png" id="wings"></div> -->
 		<div id="menu" class="link">
-			<!-- <div id="back"></div> -->
-<div id="underline"></div>
-<a id="home" href="#">Home</a>
-<a  id="about" href="portfolioabout.html">About</a>
-<a id="works" href="portfolioworks.html">Works</a>
-<span id="contact" >Contact</span>
-<table>
-	<tr id="email"><td><img src="email.png" title="Email" onclick="window.location.href='mailto: angelfrancis1111@example.com'" width="30"></td></tr>
-	<tr id="linkedin"><td><img src="linkedin.png" onclick="window.location.href='https://www.linkedin.com/in/angel-francis-267906171/'" width="30"></td></tr>
-	<tr id="studymonk"><td><img src="studymonk.png" onclick="window.location.href='https://student.studymonk.in/#/u/angel'	;" width="30"></td></tr>
-</table>
-</div>
-<div id="i"></div>
-<img class="img"src="portfolio.png" id="my"  >
-<div class="text" id="intro"><img id="name" src="text1.png">
-<img id="desc" src="text2.png" width="850"></div>
+			<div id="underline"></div>
+			<a id="home" href="#">Home</a>
+			<a  id="about" href="portfolioabout.html">About</a>
+			<a id="works" href="portfolioworks.html">Works</a>
+			<span id="contact" >Contact</span>
+				<table>
+					<tr id="email"><td><img src="email.png" title="Email" onclick="window.location.href='mailto: angelfrancis1111@example.com'" width="30"></td></tr>
+					<tr id="linkedin"><td><img src="linkedin.png" onclick="window.location.href='https://www.linkedin.com/in/angel-francis-267906171/'" width="30"></td></tr>
+					<tr id="studymonk"><td><img src="studymonk.png" onclick="window.location.href='https://student.studymonk.in/#/u/angelfrancis'	;" width="30"></td></tr>
+				</table>
+		</div>
+	<div class=".container"><br><br>
+	<div id="small">
+		<img src="chain.png" style="width: 100%;">
+		<div class="smalltext">
+			<img src="text1.png" width="900">
+			<img  src="text2.png" width="900">
+		</div>
+		<div class="fixed-bottom" style="z-index: 1;height: 60%">
+			<img src="portfolio.png" id="m" height="100%" style="display: inline;">
+		</div>
+	    <img src="plant.png" style="display: inline;" height="1000" class="float-right">
+	   </div>
+	<div id="big">
+		<div class="row align-items-end">
+			<img class="img"src="portfolio.png" id="my" onmousemove="image(event);" ontouchmove="image(event);">
+		</div>
+		<div class="text" id="intro"><img id="name" src="text1.png">
+			<img id="desc" src="text2.png" width="850">
+		</div>
+	</div>
 <div id="paper1" onmouseover="paperin();" onmouseout="paperout();"></div><!-- for background since resume overlapping -->
 <p id="p"><img src="resumetext.png" id="resumetext"width="51"></p>
 <div id="paper2"></div>
+</div>
+<script >
+	const small=$('#small')[0];
+	const bootstrap=$
+const big=$("#big")[0];
+$(document).ready(function()
+	{
+if($(window).width()<1000 || $(window).height()<400)
+			{
+				// $('#bootstrap').remove();
+				$('#big').remove();
+			}
+		else
+		{
+			$('.boot').remove();
+			$('#small').remove();
+		}
+	});
+$(window).resize(function()
+	{
+		if($(window).width()<1000 || $(window).height()<400)
+			{
+				$("#big").before(small);
+				$('#big').remove();
+			}
+		else
+		{
+			$("#small").before(big);
+			$('#small').remove();
+		}
+	});
+</script>
+<script class="boot" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script class="boot" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script class="boot" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script type="text/javascript" src="portfolio.js"></script>
 </body>
 </html>
