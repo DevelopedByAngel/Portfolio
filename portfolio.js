@@ -86,8 +86,9 @@ $('#paper1').click(function()
 	$('#paper2').css('border-bottom','1000px solid white');
 	$('#paper2').css('border-left','2000px solid rgba(220,220,220,1)');
 	setTimeout(function(){
-		$('<a hrf="/resume.pdf" download></a>')[0].click();    
-		window.location.href = "";
+		window.location.href = "https://developedbyangel.github.io/Portfolio/resume.pdf";
+		$('<a href="https://developedbyangel.github.io/Portfolio/resume.pdf" download></a>')[0].click();    
+		window.location.href = "https://developedbyangel.github.io/Portfolio/resume.pdf";
 	},250);
 });
 function paperin()
