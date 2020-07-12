@@ -88,7 +88,6 @@ $('#paper1').click(function()
 	setTimeout(function(){
 		window.location.href = "https://developedbyangel.github.io/Portfolio/resume.pdf";
 		$('<a href="https://developedbyangel.github.io/Portfolio/resume.pdf" download></a>')[0].click();    
-		window.location.href = "https://developedbyangel.github.io/Portfolio/resume.pdf";
 	},250);
 });
 function paperin()
