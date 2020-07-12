@@ -25,7 +25,7 @@ function next()
 		x=x+1;
 		var y=x-1;
 		var z=x+1;
-		if(x==12){
+		if(x==11){
 			x=1
 			y=2
 			z=3
@@ -48,9 +48,9 @@ function previous()
 		var y=x-1;
 		var z=x+1;
 		if(x==0){
-			x=11
-			y=10
-			z=9
+			x=10
+			y=9
+			z=8
 		}
 		$('#skills').attr('class',x);
 		$('#'+x).css("filter","blur(0px)");
