@@ -135,7 +135,7 @@ $('#m').on("touchstart touchmove",function(event)
 		y=-1*(y-1);
 	else
 		y=0.5-y;
-$('#m').css('transform','rotate3d('+x+','+y+',0,20deg');
+$('#m').css('transform','rotate3d('+x+','+y+',0,30deg');
 });
 $('#m').on("touchend",function()
 	{
