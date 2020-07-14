@@ -66,25 +66,23 @@ $('#skills').on("touchstart",function(event)
 $('#skills').on("touchend",function(event)
 	{
 		end=event.originalEvent.changedTouches[0].pageX;
-		console.log(start-end)
 		if(start-end>100)
 			next();
 		else if(start-end<-100)
 			previous();
 	});
+const vert=$('h1').position().top-100;
 var swipes=0;
 var swipee=0;
 $(document).on("touchstart",function(event)
 	{
-		console.log("P")
 		swipes=event.originalEvent.touches[0].pageX;
 	});
 $(document).on("touchend",function(event)
 	{
 		swipee=event.originalEvent.changedTouches[0].pageX;
-				console.log(swipes-swipee)
 
-		if(swipes-swipee>200)
+		if(swipes-swipee>200 && event.originalEvent.changedTouches[0].pageY<vert)
 			$("#works")[0].click();
 		else if(swipes-swipee<-200)
 			$("#home")[0].click();
