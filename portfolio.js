@@ -95,11 +95,11 @@ function paperout()
 
 };
 $(window).scroll(function() {
-	// alert($(document).height());
    if($(window).scrollTop() + $(window).height() > $(document).height()-50) {
        $('')
    }
 });
+const inPicEnd=$('#m').width()+$('#m').position().left;
 $('#m').on('click',function()
 	{
 		$('#m').css("animation-name","unset");
@@ -121,23 +121,23 @@ $('#m').on("touchstart touchmove",function(event)
 		y=-1*(y-1);
 	else
 		y=0.5-y;
+
 $('#m').css('transform','rotate3d('+x+','+y+',0,30deg');
 });
 $('#m').on("touchend",function()
 	{
 		$('#m').css("background-image","");
 	});
+var swipes=0;
+var swipee=0;
 $(document).on("touchstart",function(event)
 	{
 		swipes=event.originalEvent.touches[0].pageX;
-		$(document).on("touchmove",function(event)
-			{
-				swipee=event.originalEvent.changedTouches[0].pageX;
-			});
+		
 	});
 $(document).on("touchend",function(event)
 	{
 		swipee=event.originalEvent.changedTouches[0].pageX;
-		if(swipes-swipee>200)
+		if(swipes-swipee>200 && swipes>inPicEnd)
 			$("#about")[0].click();
 	});
