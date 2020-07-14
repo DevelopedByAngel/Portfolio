@@ -127,3 +127,17 @@ $('#m').on("touchend",function()
 	{
 		$('#m').css("background-image","");
 	});
+$(document).on("touchstart",function(event)
+	{
+		swipes=event.originalEvent.touches[0].pageX;
+		$(document).on("touchmove",function(event)
+			{
+				swipee=event.originalEvent.changedTouches[0].pageX;
+			});
+	});
+$(document).on("touchend",function(event)
+	{
+		swipee=event.originalEvent.changedTouches[0].pageX;
+		if(swipes-swipee>200)
+			$("#about")[0].click();
+	});

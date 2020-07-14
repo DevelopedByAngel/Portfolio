@@ -43,9 +43,9 @@
 			<img id="desc" src="text2.png" width="850">
 		</div>
 	</div>
-<div id="paper1" onmouseover="paperin();" onmouseout="paperout();"></div><!-- for background since resume overlapping -->
-<p id="p"><img src="resumetext.png" id="resumetext"width="51"></p>
-<div id="paper2"></div>
+<div id="paper1"  class="res" onmouseover="paperin();" onmouseout="paperout();"></div><!-- for background since resume overlapping -->
+<p id="p" class="res" ><img src="resumetext.png" id="resumetext"width="51"></p>
+<div id="paper2" class="res"></div>
 </div>
 <script >
 	const small=$('#small')[0];
@@ -57,6 +57,7 @@ if($(window).width()<1000 || $(window).height()<400)
 			{
 				// $('#bootstrap').remove();
 				$('#big').remove();
+				$(".res").css("transform","scale(2)")
 			}
 		else
 		{
@@ -70,6 +71,7 @@ $(window).resize(function()
 			{
 				$("#big").before(small);
 				$('#big').remove();
+				$(".res").css("transform","scale(2)")
 			}
 		else
 		{
