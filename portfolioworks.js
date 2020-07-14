@@ -11,10 +11,12 @@ $(document).ready(function()
 if($(window).width()<1000 || $(window).height()<400)
 			{
 				$('.bigscreen').remove();
+				$(".res").css("transform","scale(2)");
 			}
 		else
 		{
 			$('.container').remove();
+			$(".res").css("transform","scale(1)");
 		}
 	});
 $(window).resize(function()
@@ -23,10 +25,23 @@ $(window).resize(function()
 			{
 				$(".bigscreen").before(small);
 				$('.bigscreen').remove();
+				$(".res").css("transform","scale(2)");
 			}
 		else
 		{
 			$(".container").before(big);
 			$('.container').remove();
+			$(".res").css("transform","scale(1)");
 		}
+	});
+$(document).on("touchstart",function(event)
+	{
+		swipes=event.originalEvent.touches[0].pageX;
+	});
+$(document).on("touchend",function(event)
+	{
+		swipee=event.originalEvent.changedTouches[0].pageX;
+				console.log(swipes-swipee)
+		if(swipes-swipee<-200)
+			$("#about")[0].click();
 	});

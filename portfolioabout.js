@@ -72,3 +72,39 @@ $('#skills').on("touchend",function(event)
 		else if(start-end<-100)
 			previous();
 	});
+var swipes=0;
+var swipee=0;
+$(document).on("touchstart",function(event)
+	{
+		console.log("P")
+		swipes=event.originalEvent.touches[0].pageX;
+	});
+$(document).on("touchend",function(event)
+	{
+		swipee=event.originalEvent.changedTouches[0].pageX;
+				console.log(swipes-swipee)
+
+		if(swipes-swipee>200)
+			$("#works")[0].click();
+		else if(swipes-swipee<-200)
+			$("#home")[0].click();
+	});
+$(document).ready(function()
+	{
+if($(window).width()<1000 || $(window).height()<400)
+			{
+				$(".res").css("transform","scale(2)")
+			}
+	});
+$(window).resize(function()
+	{
+		if($(window).width()<1000 || $(window).height()<400)
+			{
+			
+				$(".res").css("transform","scale(2)")
+			}
+		else
+		{
+				$(".res").css("transform","scale(1)")
+		}
+	});
