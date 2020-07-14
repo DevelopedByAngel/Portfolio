@@ -95,7 +95,6 @@ function paperout()
 
 };
 $(window).scroll(function() {
-	// alert($(document).height());
    if($(window).scrollTop() + $(window).height() > $(document).height()-50) {
        $('')
    }
@@ -103,7 +102,6 @@ $(window).scroll(function() {
 const inPicEnd=$('#m').width()+$('#m').position().left;
 $('#m').on('click',function()
 	{
-		console.log(inPicEnd,inPicStart)
 		$('#m').css("animation-name","unset");
 	});
 $('#m').on("touchstart touchmove",function(event)
