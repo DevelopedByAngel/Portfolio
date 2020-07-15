@@ -51,29 +51,15 @@ $('#menu').mouseout(function()
 		$('#underline').css('left','18px');
 		$('#underline').css('width','80px');
 	});
-$('#email').mousemove(function()
+$(".con").mousemove(function()
+	{
+		const contactname=$(this).attr("id");
+		$('#'+contactname+' > td >img').attr('src',contactname+'c.png');
+	});
+$('.con').mouseout(function()
 {
-	$('#email > td >img').attr('src','emailc.png');
-});
-$('#linkedin').mousemove(function()
-{
-	$('#linkedin > td >img').attr('src','linkedinc.png');
-});
-$('#studymonk').mousemove(function()
-{
-	$('#studymonk > td >img').attr('src','studymonkc.png');
-});
-$('#email').mouseout(function()
-{
-	$('#email > td >img').attr('src','email.png');
-});
-$('#linkedin').mouseout(function()
-{
-	$('#linkedin > td >img').attr('src','linkedin.png');
-});
-$('#studymonk').mouseout(function()
-{
-	$('#studymonk > td >img').attr('src','studymonk.png');
+	const contactname=$(this).attr("id");
+	$('#'+contactname+' > td >img').attr('src',contactname+'.png');
 });
 $('#paper1').click(function()
 {
@@ -109,11 +95,11 @@ function paperout()
 
 };
 $(window).scroll(function() {
-	// alert($(document).height());
    if($(window).scrollTop() + $(window).height() > $(document).height()-50) {
        $('')
    }
 });
+const inPicEnd=$('#m').width()+$('#m').position().left;
 $('#m').on('click',function()
 	{
 		$('#m').css("animation-name","unset");
@@ -135,9 +121,23 @@ $('#m').on("touchstart touchmove",function(event)
 		y=-1*(y-1);
 	else
 		y=0.5-y;
+
 $('#m').css('transform','rotate3d('+x+','+y+',0,30deg');
 });
 $('#m').on("touchend",function()
 	{
 		$('#m').css("background-image","");
+	});
+var swipes=0;
+var swipee=0;
+$(document).on("touchstart",function(event)
+	{
+		swipes=event.originalEvent.touches[0].pageX;
+		
+	});
+$(document).on("touchend",function(event)
+	{
+		swipee=event.originalEvent.changedTouches[0].pageX;
+		if(swipes-swipee>200 && swipes>inPicEnd)
+			$("#about")[0].click();
 	});
