@@ -95,9 +95,11 @@ function paperout()
 
 };
 $(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() > $(document).height()-50) {
-       $('')
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+   		$('#arrow').css("opacity","100%");
    }
+   else{
+	$('#arrow').css("opacity","0%");}
 });
 const inPicEnd=$('#m').width()+$('#m').position().left;
 $('#m').on('click',function()
@@ -141,3 +143,10 @@ $(document).on("touchend",function(event)
 		if(swipes-swipee>200 && swipes>inPicEnd)
 			$("#about")[0].click();
 	});
+$(document).ready()
+{
+	if(document.documentElement.scrollHeight == document.documentElement.clientHeight)
+	{
+$('#arrow').css("opacity","100%");
+	}
+}

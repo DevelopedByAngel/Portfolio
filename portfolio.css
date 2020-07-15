@@ -2,7 +2,7 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-background:#c20b5c;/*the non scroller space in the scrolling area*/
+  box-shadow: inset 10px 10px 10px #560056; 
 }
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to bottom,transparent,#c600eb,transparent);/*scroller normally */
@@ -12,7 +12,10 @@ background:#c20b5c;/*the non scroller space in the scrolling area*/
 }
 body
 {
-background: linear-gradient(90deg, rgba(8,21,129,1) 0%, rgba(167,6,133,1) 52%, rgba(195,11,91,1) 100%);
+/*background: linear-gradient(90deg, rgba(8,21,129,1) 0%, rgba(167,6,133,1) 52%, rgba(195,11,91,1) 100%);*/
+background: linear-gradient(270deg, #560056 ,#2e242c );
+background-position: 90deg;
+background-size: cover;
 }
 #my::selection,#menu a::selection,#menu span::selection,table::selection,tr::selection
 {
@@ -93,6 +96,7 @@ tr td img
 	width:35%;
 	z-index: 1;
 	transition: all 0.2s;
+	background-size: cover;
 	}
 #m{
 		animation-name: image;
@@ -181,4 +185,24 @@ tr td img
 	background-image: url('back.png');
 	background-size: cover;
 	padding: 2em 0em 2em 0em;
+}
+#arrow
+{
+	position: fixed;
+	bottom: 100px;
+	right: 10px;
+	fill:  #fdfbbd;
+	stroke: #c600eb;
+	stroke-width:1 ;
+	animation-name: arr;
+		background-image: radial-gradient(transparent,transparent);
+	animation-duration:0.5s;
+	animation-iteration-count: infinite;
+	opacity: 100%;
+	transition: opacity 0.5s;
+}
+@keyframes arr
+{
+	0%{bottom: 100px;}
+	50%{bottom: 85px;}
 }
