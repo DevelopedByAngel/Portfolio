@@ -130,7 +130,7 @@ label
 {
 font-size:3rem;
 }
-btn-primary {
+.btn-primary {
     color: #000;
     font-weight: bold;
     background-color: #ffffff;
