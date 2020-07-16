@@ -89,7 +89,6 @@ $(document).on("touchend",function(event)
 	});
 $(document).ready(function()
 	{
-
 if($(window).width()<1000 || $(window).height()<400)
 			{
 				$(".res").css("transform","scale(2)");

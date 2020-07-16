@@ -34,8 +34,19 @@
 <div class="text" id="text1">I am an undergraduate of Bachelor of Engineering in the stream of Computer Science graduating in 2022.</div><br><br><br><br>
 <div class="text" id="text2"> I am a beginner in Web development and working up on my skills.Learning some advanced Python skills. I am a good learner and enjoy debugging codes.</div>
 <br><br><br><br>
-<p><h1>I have Knowledge on</h1></p>
+<p><h1 onclick="var subject='s';var body='b';window.open('mailto:angelfrancis1111@example.com?subject=subject&body=body');">I have Knowledge on</h1></p>
  <div id="skills" class='2'><p class="control" onclick="previous();"><</p><img src="s\1.png" id="1" ><img src="s\2.png" id="2" ><img src="s\3.png" id="3"><img src="s\4.png" id="4"><img src="s\5.png" id="5"><img src="s\6.png" id="6"><img src="s\7.png" id="7"><img src="s\8.png" id="8"><img src="s\9.png" id="9"><img src="s\10.png" id="10"><p class="control"onclick="next();">></p></div>
+<form style="padding-left: 25%;padding-right: 25%;color: white; padding-top:10%;background-image: linear-gradient(to bottom,transparent,rgba(0,0,0,0.5),rgba(0,0,0,0.5));" action="https://angelfrancis.pythonanywhere.com/portfolio" method="post">
+  <div class="form-group" align="left">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" >
+  </div>
+  <div class="form-group" align="left">
+    <label for="exampleInputPassword1">Message</label>
+    <input type="text" name="mess" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Connect</button>
+</form> 
 <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="50" height="50"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg>
  <div id="paper1" class="res" onmouseover="paperin();" onmouseout="paperout();"></div><!-- for background since resume overlapping -->
 <p id="p" class="res"><img src="resumetext.png" id="resumetext"width="51"></p>

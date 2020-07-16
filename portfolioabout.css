@@ -103,3 +103,26 @@ h1
 	opacity: 0%;
 	
 }
+.img-thumbnail
+{
+	margin:1em;
+}
+
+.form-control
+{
+	border-bottom: 3px solid green;
+	animation-name: w;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+#exampleInputPassword1
+{
+	animation-delay: 1.5s;
+}
+@keyframes w
+{
+	0%{	border-bottom: 3px solid purple;}
+	25%{border-bottom: 3px solid orange;}
+	50%{border-bottom: 3px solid blue;}
+	75%{border-bottom: 3px solid green;}
+}
