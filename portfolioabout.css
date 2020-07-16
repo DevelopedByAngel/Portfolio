@@ -126,3 +126,7 @@ h1
 	50%{border-bottom: 3px solid blue;}
 	75%{border-bottom: 3px solid green;}
 }
+label
+{
+font-size:3rem;
+}
